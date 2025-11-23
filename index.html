@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dipanshu Sharma — Resume</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#7dd3fc;
+  --accent-2:#60a5fa;
+  --glass: rgba(255,255,255,0.04);
+  --glass-2: rgba(255,255,255,0.02);
+  --radius:14px;
+  --maxw:900px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:#071525;
+  font-family:Inter,system-ui;
+  color:#e6eef6;
+  display:flex;
+  justify-content:center;
+  padding:20px;
+}
+
+.resume{
+  width:100%;
+  max-width:var(--maxw);
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:28px;
+  background:rgba(255,255,255,0.02);
+  border-radius:var(--radius);
+  padding:22px;
+}
+
+.left{padding:18px;}
+.portrait{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.avatar{
+  width:72px;height:72px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;font-weight:700;
+  color:#07203a;font-size:22px;
+}
+
+h1.name{margin:0;font-size:18px}
+p.role{margin:0;color:var(--muted);font-size:13px}
+
+.contact{margin-top:12px;font-size:13px;color:var(--muted);line-height:1.6}
+.section-title{margin:18px 0 8px 0;font-size:12px;color:var(--muted);letter-spacing:1px}
+.pill{padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-size:13px;margin:4px}
+
+.right{padding:18px}
+.summary{
+  background:var(--glass-2);
+  padding:14px;border-radius:10px;color:var(--muted);font-size:14px;
+}
+
+.job{padding:12px;border-radius:10px;background:var(--glass);margin-top:10px}
+
+table{width:100%;border-collapse:collapse;margin-top:8px}
+td,th{padding:8px 6px;text-align:left;font-size:14px}
+th{color:var(--muted);font-size:13px}
+
+/* ✅ FIXED MOBILE VIEW */
+@media(max-width:880px){
+  .resume{
+    grid-template-columns:1fr;
+    padding:16px;
+    gap:18px;
+  }
+  .left,
+  .right {
+    order: unset; /* ✅ NO REVERSING */
+
+  }
+  
+}
+</style>
+</head>
+
+<body>
+<div class="resume">
+
+  <!-- ✅ THIS WILL ALWAYS BE FIRST ON MOBILE -->
+  <aside class="left">
+    <div class="portrait">
+      <div class="avatar">DS</div>
+      <div>
+        <h1 class="name">DIPANSHU SHARMA</h1>
+        <p class="role">Customer Support Executive • Beginner MERN Developer</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <strong>Phone:</strong> 8755120678<br>
+      <strong>Email:</strong> sharmadipanshu297@gmail.com<br>
+      <strong>Location:</strong> Meerut, Uttar Pradesh, 250001
+    </div>
+
+    <div class="section-title">TECH SKILLS</div>
+    <div>
+      <span class="pill">HTML</span>
+      <span class="pill">Learning CSS</span>
+      <span class="pill">Learning JavaScript</span>
+      <span class="pill">Learning MongoDB</span>
+      <span class="pill">Learning Node.js</span>
+    </div>
+
+    <div class="section-title">SOFT SKILLS</div>
+    <div style="color:var(--muted);font-size:14px">
+      Customer Service<br>
+      Communication<br>
+      Retail Sales<br>
+      Brand Storytelling
+    </div>
+
+    <div class="section-title">EDUCATION</div>
+    <table>
+      <tr><th>Degree</th><th>Year</th></tr>
+      <tr><td>High School — UP Board</td><td>2020</td></tr>
+      <tr><td>Intermediate — UP Board</td><td>2022</td></tr>
+      <tr><td>BCA — CCS Univ.</td><td>2025</td></tr>
+    </table>
+  </aside>
+
+  <main class="right">
+    <h2>SUMMARY</h2>
+    <div class="summary">
+      I am a beginner MERN Stack developer currently focusing on building strong fundamentals in web development. I have a good understanding of HTML and I am actively learning CSS, JavaScript, MongoDB, Express.js, React.js, and Node.js. I enjoy creating clean and simple web pages and I am improving my skills to build full-stack projects. I am passionate, quick-learning, and excited to work on real-world projects to grow as a developer.
+    </div>
+
+    <h2>EXPERIENCE</h2>
+    <div class="job">
+      <h3>Brand Promoter</h3>
+      <h4>Keya Foods International Pvt Ltd</h4>
+      <p>Represented the brand in retail environments and engaged customers to increase product visibility. Learned customers-facing communication, product pitching, and persuasive storytelling. Collaborated with teams to plan promotions and gather feedback from customers</p>
+    </div>
+
+    <h2>PROJECTS & GOALS</h2>
+    <p style="color:var(--muted);font-size:14px">
+      Currently building simple personal projects to apply MERN fundamentals: a portfolio page using HTML/CSS, a TODO app with react (learning), and a small API using Node.js & Express(learning). Goal: deploy a full-stack project and gain hands-on experience with end-to-end development.
+    </p>
+  </main>
+
+</div>
+</body>
+</html>
+
